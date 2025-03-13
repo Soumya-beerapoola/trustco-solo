@@ -7,6 +7,10 @@
 	--accent-color: #28a745;
 	--background-color: #f8f9fa;
 	--text-color: #212529;
+	--dark-blue: #043A53;
+	--light-gray: #F2F5F6;
+	--black: #12141D;
+	--white: #ffffff;
 }
 
 /* Reset default margins and paddings */
@@ -23,7 +27,6 @@ body {
 	line-height: 1.6;
 	color: var(--text-color);
 	background-color: var(--background-color);
-	padding: 20px;
 }
 
 /* Heading styles */
@@ -44,7 +47,7 @@ p {
 
 /* Link styling */
 a {
-	color: var(--primary-color);
+	color: var(--dark-blue);
 	text-decoration: none;
 }
 
@@ -52,9 +55,103 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* Navigation Links */
+.navlinks {
+	list-style-type: none;
+	font-family: Lato, sans-serif;
+	font-size: 16px;
+	display: flex;
+	width: 487px;
+	justify-content: space-between;
+	color: var(--black);
+}
 
-header,
-main,
-footer {
-	padding: 20px;
+/* Buttons */
+.primaryButton,
+.getStartedButton {
+	width: 92px;
+	height: 50px;
+	border-radius: 42px;
+	background-color: var(--dark-blue);
+	color: var(--white);
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.getStartedButton {
+	width: 141px;
+	height: 60px;
+	border-radius: 55px;
+	box-shadow: 0px 23px 47px 0px var(--dark-blue);
+}
+
+.secondaryButton {
+	width: 92px;
+	height: 50px;
+	border-radius: 42px;
+	background-color: var(--white);
+	color: var(--black);
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+/* Header Section */
+.headerSection {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--light-gray);
+	padding: 15px;
+}
+
+/* Hero Section */
+.heroSection {
+	display: flex;
+	background-color: var(--light-gray);
+	justify-content: space-between;
+	padding: 100px;
+}
+
+.heroSectionContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 709px;
+	text-align: center;
+}
+
+.heroSectionHeading {
+	font-size: 64px;
+	font-weight: 800;
+	font-family: Lato, sans-serif;
+	line-height: 60px;
+	color: var(--black);
+}
+.heroSectionHeadingSpan{
+	color: var(--dark-blue)
+
+}
+
+.heroSectionDescription {
+	font-size: 20px;
+	font-weight: 500;
+	font-family: Lato, sans-serif;
+	color: var(--black);
+}
+.playButton{
+	display: flex;
+	color: #043A53;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	background-color: var(--light-gray);
+	width: 230px;
+}
+.heroSectionButtons{
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
 }
