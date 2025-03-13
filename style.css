@@ -1,0 +1,60 @@
+/* Global Styles */
+
+/* Define color variables for consistency */
+:root {
+	--primary-color: #007bff;
+	--secondary-color: #6c757d;
+	--accent-color: #28a745;
+	--background-color: #f8f9fa;
+	--text-color: #212529;
+}
+
+/* Reset default margins and paddings */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Apply global font settings */
+body {
+	font-family: "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: var(--text-color);
+	background-color: var(--background-color);
+	padding: 20px;
+}
+
+/* Heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+
+/* Paragraph styling */
+p {
+	margin-bottom: 16px;
+}
+
+/* Link styling */
+a {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+header,
+main,
+footer {
+	padding: 20px;
+}
