@@ -232,56 +232,54 @@ a:hover {
 	}
 }
 
-.trustedBands{
+.trustedBands {
 	display: flex;
 	align-items: center;
-    flex-wrap: wrap;
-	height:200px;
-	padding: 0px;
-	justify-content: center;
-}
-.trustedBands div{
-	font-size: 12px;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	height: 132px;
+	padding: 0px 100px;
 }
 
-@media (min-width:769px) {
+.trustedBands div {
+	flex-grow: 1;
+	font-size: 16px;
+}
+
+@media (max-width: 768px) {
 	.trustedBands {
-		    flex-wrap: nowrap;
-			justify-content: space-around;
-			align-items: center;
-			height: 132px;
-			padding: 0px 100px;
-		}
-	.trustedBands div{
-		flex-grow: 1;
-		font-size: 16px;
+		flex-wrap: wrap;
+		justify-content: center;
+		height: 200px;
+		padding: 0px;
+		align-items: center;
+		text-align: center;
+	}
 
-	}	
-
-
-	
+	.trustedBands div {
+		font-size: 12px;
+	}
 }
 
-.companySection{
+.companySection {
 	display: flex;
 	flex-wrap: wrap;
-	gap:30px;
+	gap: 30px;
 	row-gap: 30px;
 	align-items: center;
-	justify-content: center;
-}
-
-.companySection img{
-	height:16px;
-}
-
-@media (min-width:769px) {
-  .companySection{
 	justify-content: space-between;
-  }
+}
 
-  .companySection img {
-  	height: 25px;
-  }
-	
+.companySection img {
+	height: 25px;
+}
+
+@media (max-width: 768px) {
+	.companySection {
+		justify-content: center;
+	}
+
+	.companySection img {
+		height: 16px;
+	}
 }
