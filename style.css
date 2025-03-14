@@ -22,7 +22,7 @@
 
 /* Apply global font settings */
 body {
-	font-family: "Arial", sans-serif;
+	font-family: lato;
 	font-size: 16px;
 	line-height: 1.6;
 	color: var(--text-color);
@@ -230,4 +230,12 @@ a:hover {
 	.heroSectionImagesMobile {
 		display: none;
 	}
+}
+
+.companySection{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 132px;
+	padding: 0px 50px;
 }
