@@ -232,10 +232,56 @@ a:hover {
 	}
 }
 
+.trustedBands{
+	display: flex;
+	align-items: center;
+    flex-wrap: wrap;
+	height:200px;
+	padding: 0px;
+	justify-content: center;
+}
+.trustedBands div{
+	font-size: 12px;
+}
+
+@media (min-width:769px) {
+	.trustedBands {
+		    flex-wrap: nowrap;
+			justify-content: space-around;
+			align-items: center;
+			height: 132px;
+			padding: 0px 100px;
+		}
+	.trustedBands div{
+		flex-grow: 1;
+		font-size: 16px;
+
+	}	
+
+
+	
+}
+
 .companySection{
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	gap:30px;
+	row-gap: 30px;
 	align-items: center;
-	height: 132px;
-	padding: 0px 50px;
+	justify-content: center;
+}
+
+.companySection img{
+	height:16px;
+}
+
+@media (min-width:769px) {
+  .companySection{
+	justify-content: space-between;
+  }
+
+  .companySection img {
+  	height: 25px;
+  }
+	
 }
