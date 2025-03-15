@@ -113,8 +113,12 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: var(--light-gray);
 	padding: 15px;
+}
+@media (min-width:769px) {
+	.headerSection{
+	background-color: var(--light-gray);
+	}
 }
 
 /* Hero Section */
@@ -306,4 +310,73 @@ a:hover {
 	display: none;
 	}
 	
+}
+
+.hamburger-container {
+	display: block;
+	position: relative;
+	
+}
+.hamburger-backdrop::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: background 0.5s;
+}
+.hamburger-backdrop.show::before {
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+.hamburger-side-menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	max-width: 450px;
+	width:100%;
+	transform: translateX(450px);
+	transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+	background-color: var(--light-gray);
+}
+.show .hamburger-side-menu {
+	transform: translateX(0px);
+}
+.hamburger-container .close-button {
+	position: absolute;
+	left: 15px;
+	top: 30px;
+	padding: 10px;
+}
+.hamburger-side-menu .navlinks {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	padding-left:20px;
+}
+.hamburger-side-menu .navlinks li {
+	margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+	.hamburger-container {
+		display: none;
+	}
+	.hamburger-backdrop {
+		display: none;
+	}
+}
+.hamburger-menu {
+	width: 24px;
+	height: 24px;
+}
+
+.mobileLogin{
+	display: flex;
+	justify-content: flex-end;
+	margin:20px;
 }
