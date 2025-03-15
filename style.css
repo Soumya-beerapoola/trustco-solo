@@ -456,3 +456,36 @@ a:hover {
 	background: rgba(0, 0, 0, 0.8);
 }
 
+ @media (max-width: 768px) {
+ 	#video-section {
+ 		flex-direction: column;
+ 		text-align: center;
+ 		padding: 30px;
+ 	}
+
+ 	.video-content {
+ 		flex-direction: column;
+ 		width: 100%;
+ 		text-align: left;
+ 	}
+
+ 	.video-title {
+ 		font-size: 30px;
+ 		width: 100%;
+ 		line-height: 38px;
+ 	}
+
+ 	.video-description {
+ 		font-size: 14px;
+ 		width: 100%;
+ 		line-height: 20px;
+ 	}
+
+
+ 	.video-thumbnail {
+ 		width: 100%;
+ 		max-width: 400px;
+ 		margin-top: 20px;
+ 		height: auto;
+ 	}
+ }
