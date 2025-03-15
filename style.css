@@ -495,6 +495,8 @@ a:hover {
 	     	padding: 40px 0px; 
 			justify-content: center;	
 	     }
+
+
 	
 	     .benefitsSection {
 	     	display: flex;
@@ -502,6 +504,7 @@ a:hover {
 	     	width: 256px;
 			margin-top: 30px;
 	     }
+
 	
 	     .beneficialTitle {
 	     	font-size: 60px;
@@ -547,3 +550,27 @@ a:hover {
 	     	font-size: 0.9em;
 	     	color: #555;
 	     }
+
+
+
+	     @media (max-width:991px) {
+			#benefits {
+				flex-direction: column;
+			}
+				
+		 .benefitsSection {
+				margin: auto;
+				text-align: center;
+				align-items: center;
+			}
+				
+		.benefit-container {
+				padding-left: 0px;
+			}
+		.benefit-card {
+			width:100%;
+			margin:0px 20px;
+			max-width: none;
+		}	
+
+		}
