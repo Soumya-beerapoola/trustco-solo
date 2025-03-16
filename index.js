@@ -46,3 +46,37 @@ benefits.forEach((benefit) => {
   benefitContainer?.appendChild(card);
 });
 
+
+const metrics = [
+  { value: "$65 M", label: "Generate sales" },
+  { value: "58%", label: "Grew revenue" },
+  { value: "12", label: "Countries" },
+  { value: "16k+", label: "Grew customers" },
+];
+
+// Function to create a number card
+function createNumberCard(value, label) {
+  const card = document.createElement("div");
+  card.classList.add("number-card");
+
+  const numberElement = document.createElement("div");
+  numberElement.classList.add("number");
+  numberElement.textContent = value;
+
+  const labelElement = document.createElement("div");
+  labelElement.classList.add("label");
+  labelElement.textContent = label;
+
+  card.appendChild(numberElement);
+  card.appendChild(labelElement);
+
+  return card;
+}
+
+
+const numbersContainer = document.getElementById("numbersContainer");
+metrics.forEach((metric) => {
+  const card = createNumberCard(metric.value, metric.label);
+  numbersContainer.appendChild(card);
+});
+

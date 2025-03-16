@@ -12,6 +12,8 @@
 	--black: #12141D;
 	--white: #ffffff;
 	--ash:#92a7b0;
+	--dark-ash:#404040;
+
 }
 
 /* Reset default margins and paddings */
@@ -688,7 +690,39 @@ a:hover {
 				right:20px;
 			}
 		}
-				
+			
+		
+	#numbers {
+		text-align: center;
+		padding: 50px 20px;
+		background-color: white;
+	}
+		
+	.numbers-container {
+		display: flex;
+		justify-content: space-evenly;
+		gap: 50px;
+		flex-wrap: wrap;
+		margin-top: 20px;
+	}
+		
+	.number-card {
+		text-align: center;
+		padding: 20px;
+		min-width: 150px;
+	}
+		
+	.number {
+		font-size: 60px;
+		font-weight: 700;
+		color: var(--dark-blue)
+	}
+		
+	.label {
+		font-size: 24px;
+		color: var(--dark-ash)
+	}
+	
 
 				
 
