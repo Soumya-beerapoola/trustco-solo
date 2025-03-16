@@ -42,6 +42,11 @@ h6 {
 	font-weight: bold;
 	margin-bottom: 16px;
 }
+.heading {
+font-size: 60px;
+font-weight: 700;
+line-height: 72px;
+}
 
 /* Paragraph styling */
 p {
@@ -399,9 +404,6 @@ a:hover {
 }
 
 .video-title {
-	font-size: 60px;
-	font-weight: 700;
-	line-height: 72px;
 	color: var(--white);
 	width:52%;
 }
@@ -507,9 +509,6 @@ a:hover {
 
 	
 	     .beneficialTitle {
-	     	font-size: 60px;
-	     	font-weight: 700;
-	     	line-height: 72px;
 	     	color: var(--black);
 	     }
 	
@@ -641,8 +640,6 @@ a:hover {
 		}
 				
 		.text-container h2 {
-			font-size: 60px;
-			line-height: 72px;
 			color: var(--black)
 		}
 				
@@ -737,6 +734,66 @@ a:hover {
 			font-size: 16px;
 		}
 		}
+	#meet-founder {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    padding: 60px;
+		padding-left:120px;
+	    background-color: white;
+	    margin: auto;
+	 }
+
+    .founder-content {
+	    flex: 1;
+	    padding-right: 40px;
+    }
+
+    .founder-content h2 {
+	    color: var(--black);
+		margin-bottom: 15px;
+    }
+
+    .founder-content blockquote {
+	    font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 20px;
+		font-weight: 400;
+	}
+
+    .founder-name {
+		font-weight: 700;
+		font-size: 20px;
+		margin-bottom: 0px;
+	}
+
+	.founder-title {
+		font-size: 16px;
+		font-weight: 400;
+		color: var(--dark-ash)
+	}
+
+	.founder-image {
+		position: relative;
+	}
+
+	.founder-image img {
+		max-width: 700px;
+	}
+
+	.cta-button {
+		padding: 12px 20px;
+		font-size: 14px;
+		margin-top: 20px;
+		width:280px;
+		display: flex;
+		align-items: center;
+	}
+	.cta-button img {
+		margin-left: 10px;
+	}
+
+
 
 				
 
