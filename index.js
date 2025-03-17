@@ -137,3 +137,51 @@ function updateDots() {
 }
 
 moveToSlide(0);
+
+//blogs
+const blogs = [
+  {
+    title: "What Makes an Authentic Employee Profile?",
+    date: "23 Nov 2022,",
+    author: " Amanda Hugh",
+    excerpt:
+      "I'm totally unconvinced that two people can find a person they haven't known previously...",
+    image: "/assets/Blog1.png",
+    link: "#",
+  },
+  {
+    title: "Why Does It Matter to be Authentic Employee?",
+    date: "15 Nov 2022,",
+    author: " Sofia Kent",
+    excerpt:
+      "I'm totally unconvinced that two people can find a person they haven't known previously...",
+    image: "/assets/Blog2.png",
+    link: "#",
+  },
+  {
+    title: "What Makes an Authentic Employee Profile?",
+    date: "23 Sep 2022,",
+    author: " Jason Bone",
+    excerpt:
+      "I'm totally unconvinced that two people can find a person they haven't known previously...",
+    image: "/assets/Blog3.png",
+    link: "#",
+  },
+];
+
+const blogCardsContainer = document.getElementById("blogCards");
+
+blogs.forEach((blog) => {
+  const card = document.createElement("div");
+  card.classList.add("blog-card");
+  card.innerHTML = `
+                <img src="${blog.image}" alt="Blog Image">
+                <div>
+                <p><strong>${blog.date}</strong> by ${blog.author}</p>
+                <h3>${blog.title}</h3>
+                <p>${blog.excerpt}</p>
+                <a href="${blog.link}" class="read-more">Read More →</a>
+                </div>
+            `;
+  blogCardsContainer.appendChild(card);
+});
