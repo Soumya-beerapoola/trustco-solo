@@ -185,3 +185,6 @@ blogs.forEach((blog) => {
             `;
   blogCardsContainer.appendChild(card);
 });
+
+// Set the current year dynamically
+document.getElementById("current-year").textContent = new Date().getFullYear();
