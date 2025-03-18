@@ -1332,6 +1332,17 @@ a:hover {
 			cursor: pointer;
 			outline: none;
 		}
+	@media (max-width: 768px) {
+		.site-credits {
+			padding: 20px;
+		}
+		
+		.credits-container {
+			flex-direction: column;
+			text-align: center;
+			gap: 10px;
+			}
+		}
 		
 			
 
