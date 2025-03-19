@@ -11,6 +11,7 @@
 	--light-gray: #F2F5F6;
 	--black: #12141D;
 	--white: #ffffff;
+	--ash:#92a7b0;
 }
 
 /* Reset default margins and paddings */
@@ -22,7 +23,7 @@
 
 /* Apply global font settings */
 body {
-	font-family: lato;
+	font-family: 'Lato',sans-serif;
 	font-size: 16px;
 	line-height: 1.6;
 	color: var(--text-color);
@@ -58,7 +59,6 @@ a:hover {
 /* Navigation Links */
 .navlinks {
 	list-style-type: none;
-	font-family: Lato, sans-serif;
 	font-size: 16px;
 	display: flex;
 	width: 487px;
@@ -164,7 +164,6 @@ a:hover {
 .heroSectionHeading {
 	font-size: 30px;
 	font-weight: 600;
-	font-family: Lato, sans-serif;
 	line-height: 44px;
 	color: var(--black);
 }
@@ -186,7 +185,6 @@ a:hover {
 .heroSectionDescription {
 	font-size: 14px;
 	font-weight: 500;
-	font-family: Lato, sans-serif;
 	color: var(--black);
 }
 @media (min-width: 769px){
@@ -513,7 +511,7 @@ a:hover {
 	     	color: var(--black);
 	     }
 	
-	     .beneficialDescription {
+	     .description {
 	     	font-size: 20px;
 	     	font-weight: 400;
 			line-height: 30px;
@@ -574,3 +572,93 @@ a:hover {
 		}	
 
 		}
+		#building-bridges {
+		    display: flex;
+			align-items: center;
+			background: #fff;
+			padding: 40px 40px 40px 0px;
+		}
+				
+		 .content-wrapper {
+			display: flex;
+			max-width: 1200px;
+			align-items: center;
+			gap: 100px;
+		}
+				
+		.image-container {
+			position: relative;
+		}
+				
+		.bridge-image {
+			width: 629px;
+			border-radius: 10px;
+		}
+				
+		.award-badge {
+			position: absolute;
+			right:0px;
+			bottom:80px;
+			width: 140px;
+			height: 140px;
+			background: var(--dark-blue);
+			color: var(--white);
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			font-weight: bold;
+			box-shadow: 10px 13px 30px var(--dark-blue)
+		    }
+				
+		.badge-inner {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+	    }
+				
+		.icon {
+			width:40px;
+			height:40px;
+			margin-top: 10px;
+	    }
+				
+	    .rank {
+			font-size: 24px;
+			margin: 5px 0;
+		}
+				
+		.award-text {
+			font-size: 12px;
+		}
+				
+		.text-container {
+			max-width: 500px;
+		}
+				
+		.text-container h2 {
+			font-size: 60px;
+			line-height: 72px;
+			color: var(--black)
+		}
+				
+	    .highlight {
+			color: var(--ash)
+		}
+		.arrowButton{
+			width: 150px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.arrowButton img{
+			margin-left: 5px;
+		}
+		
+				
+
+				
+
+				
+						       
