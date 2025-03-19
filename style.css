@@ -5,7 +5,6 @@
 	--primary-color: #007bff;
 	--secondary-color: #6c757d;
 	--accent-color: #28a745;
-	--background-color: #f8f9fa;
 	--text-color: #212529;
 	--dark-blue: #043A53;
 	--light-gray: #F2F5F6;
@@ -14,6 +13,7 @@
 	--ash:#92a7b0;
 	--dark-ash:#404040;
 	--yellow:#F0B73F;
+	--light-blue-gray:#91a7B0;
 
 }
 
@@ -1343,7 +1343,124 @@ a:hover {
 			gap: 10px;
 			}
 		}
+		/* contact page */
+		.contact-info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: var(--light-gray);
+		}
+        .contact-info,
+		.contact-form {
+			text-align: center;
+			padding: 50px 20px;
+		}				
 		
-			
-
+		.contact-cards {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+		.card {
+			background:var(--white);
+			padding: 20px;
+			border-radius: 10px;
+			width: 350px;
+			text-align: left;
+		}
 		
+		.card img {
+			width: 40px;
+		}
+		
+		.card h3 {
+			margin: 10px 0;
+			font-size: 24px;;
+		}
+		
+		.card a {
+			text-decoration: none;
+			font-size: 18px;
+		}
+		.card p {
+			font-size: 18px;
+		}
+		.contact-form{
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+		.contact-form p, .contact-info p {
+			max-width: 500px;
+		}
+				form {
+					margin: 0 auto;
+					background: white;
+					padding: 20px;					
+									
+				}
+				
+				.form-grid {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 15px;
+				}
+				
+			    .input-group {
+					display: flex;
+					flex-direction: column;
+					position: relative;
+				}
+				
+				.input-group label {
+					font-weight: bold;
+					margin-bottom: 5px;
+					text-align: left;
+				}
+				.input-group input {
+					width:500px;
+				}
+				
+				.input-group input,
+				.input-group textarea {
+					padding: 10px;
+					border: 1px solid var(--light-blue-gray);
+					border-radius: 5px;
+					padding-left: 40px;
+					color: var(--light-blue-gray);
+					font-size: 16px;
+				}
+				
+				.input-group img {
+					 position: absolute;
+					 left: 10px;
+					 top: 42px;
+					 width: 20px;
+				}
+				
+				.full-width {
+					 grid-column: span 2;
+				}
+				
+				.checkbox-group {
+					 display: flex;
+					 align-items: center;
+				}
+				
+				.checkbox-group input {
+					 margin-right: 10px;
+				}
+				button:hover {
+					 background-color: #0056b3;
+				}
+				.formSubmitSection{
+					 display: flex;
+					 justify-content: space-between;
+					 align-items: center;
+					 margin-top: 20px;
+				}
+				.formSubmitSection button{
+					 width:150px;
+					 margin-top: 20px;
+				}
