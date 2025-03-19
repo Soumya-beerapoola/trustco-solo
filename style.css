@@ -1245,5 +1245,41 @@ a:hover {
 		.footer-column ul li a:hover {
 			color: var(--primary-color)
 		}
+		@media (max-width: 991px) {
+			.footer {
+				padding: 20px;
+			}
 	
+			.footer-container {
+				flex-direction: column;
+				text-align: center;
+			}
+	
+			.footer-left {
+				margin-bottom: 20px;
+				align-items: center;
+			}
+	
+			.footer-middle p,
+			.footer-column h4,
+			.footer-column ul li a {
+				font-size: 16px;
+				line-height: 24px;
+			}
+	
+			.social-icons {
+				justify-content: center;
+			}
+	
+			.footer-column {
+				text-align: left;
+			}
+	
+			.footer-middle {
+				max-width: 100%;
+				margin-bottom: 20px;
+			}
+	
+	
+		}
 		
