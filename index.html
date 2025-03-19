@@ -26,6 +26,26 @@
 			<button class="secondaryButton">Login</button>
 			<button class="primaryButton">SignUp</button>
 		</div>
+		<div class="hamburger-container">
+			<img class="hamburger-menu" onclick="onHamburgerMenuClick(true)" src="/assets/Menu.png"/>
+			<div class="hamburger-backdrop">
+				<div class="hamburger-side-menu">
+					<button class="close-button" onclick="onHamburgerMenuClick(false)">X</button>
+					<div class="mobileLogin">
+						<button class="secondaryButton">Login</button>
+						<button class="primaryButton">SignUp</button>
+					</div>
+					<ul class="navlinks">
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Solutions</a></li>
+						<li><a href="#">Company</a></li>
+						<li><a href="#">Resources</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
 
 	</header> 
 
@@ -60,6 +80,8 @@
 	<footer>
 		<p></p>
 	</footer>
+
+	<script src="./index.js"></script>
 </body>
 
 </html>
