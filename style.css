@@ -77,8 +77,13 @@ a:hover {
 	border: none;
 	outline: none;
 	cursor: pointer;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
+.primaryButton:hover,
+.getStartedButton:hover {
+	background-color: var(--secondary-color);
+	
+}
 .getStartedButton {
 	width: 141px;
 	height: 60px;
@@ -95,8 +100,14 @@ a:hover {
 	border: none;
 	outline: none;
 	cursor: pointer;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.secondaryButton:hover {
+	background-color: var(--dark-blue);
+	color:var(--white);
+	
+}
 /* Header Section */
 .headerSection {
 	display: flex;
@@ -282,4 +293,17 @@ a:hover {
 	.companySection img {
 		height: 16px;
 	}
+}
+.logo{
+	width:160px;
+	height:24px;
+}
+
+@media (max-width:768px) {
+
+	.navSection,
+	.headerButtons{ 
+	display: none;
+	}
+	
 }
