@@ -145,7 +145,6 @@ a:hover {
 	justify-content: space-between;
 	padding: 100px;
 	background-color: var(--light-gray);
-	flex-wrap: wrap;
 	gap: 20px;
 }
 
@@ -157,7 +156,7 @@ a:hover {
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 	.heroSection {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -172,7 +171,6 @@ a:hover {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 709px;
 	text-align: center;
 }
 
@@ -183,7 +181,7 @@ a:hover {
 	color: var(--black);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
 	.heroSectionHeading{
 		font-size: 64px;
 		font-weight: 800;
@@ -202,7 +200,7 @@ a:hover {
 	font-weight: 500;
 	color: var(--black);
 }
-@media (min-width: 769px){
+@media (min-width: 992px){
 	.heroSectionDescription {
 			font-size: 20px;
 		}
@@ -234,8 +232,6 @@ a:hover {
 @media (min-width:769px) {
 .heroSectionButtons {
 	flex-direction: row;
-	justify-content: space-between;
-	width: 50%;
 	}	
 }
 .playButton img {
@@ -244,7 +240,7 @@ a:hover {
 	margin-right: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 	.heroSectionImagesDesktop{
       display: none;
 	}	
@@ -252,9 +248,10 @@ a:hover {
 .heroSectionImagesMobile{
 	width: 100%;
 	height: 300px;
+	object-fit: contain;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
 	.heroSectionImagesMobile {
 		display: none;
 	}
@@ -316,7 +313,7 @@ a:hover {
 	height:24px;
 }
 
-@media (max-width:768px) {
+@media (max-width:991px) {
 
 	.navSection,
 	.headerButtons{ 
@@ -375,7 +372,7 @@ a:hover {
 	margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 991px) {
 	.hamburger-container {
 		display: none;
 	}
@@ -432,7 +429,6 @@ a:hover {
 /* Video Thumbnail */
 .video-thumbnail {
 	position: relative;
-	width: 1130px;
 	height:636px;
 	border-radius: 10px;
 	overflow: hidden;
@@ -502,7 +498,7 @@ a:hover {
 
 	     #benefits {
 	     	display: flex;
-	     	padding: 40px 0px; 
+	     	padding: 40px 100px; 
 			justify-content: center;	
 	     }
 
@@ -628,7 +624,7 @@ a:hover {
 			align-items: center;
 	    }
 				
-		.icon {
+		.diamondIcon{
 			width:40px;
 			height:40px;
 			margin-top: 10px;
@@ -791,7 +787,7 @@ a:hover {
 		max-width: 700px;
 	}
 
-	.cta-button {
+	.founder-button {
 		padding: 12px 20px;
 		font-size: 14px;
 		margin-top: 20px;
@@ -799,7 +795,7 @@ a:hover {
 		display: flex;
 		align-items: center;
 	}
-	.cta-button img {
+	.founder-button img {
 		margin-left: 10px;
 	}
 
@@ -964,7 +960,6 @@ a:hover {
 		display: flex;
 		gap: 20px;
 		flex-wrap: nowrap;
-		overflow-x: auto;
 	}
 
 	.blog-card {
@@ -1008,6 +1003,9 @@ a:hover {
 	}
 	
 	@media (max-width: 991px) {
+		.blog-cards{
+			overflow-x: auto;
+		}
 		#blogs {
 			padding: 20px;
 		}
@@ -1419,7 +1417,7 @@ a:hover {
 					text-align: left;
 				}
 				.input-group input {
-					width:500px;
+					width: 400px;
 				}
 				
 				.input-group input,
@@ -1464,3 +1462,33 @@ a:hover {
 					 width:150px;
 					 margin-top: 20px;
 				}
+		@media (min-width: 768px) and (max-width: 991px) {
+			.card{
+				width:250px;
+			}
+			.input-group input{
+				width:300px;
+			}
+		}
+		@media (max-width:768px) {
+			.form-grid{
+				display: flex;
+				flex-direction: column;
+			}
+			.card{
+				width:100%;
+			}
+			.input-group input{
+				width:100%;
+			}
+			.formSubmitSection{
+				flex-direction: column;
+			}
+			.formSubmitSection button{
+				width:100%;
+			}
+			.contact-info{
+				background-color: var(--white);
+			}
+
+		}		
