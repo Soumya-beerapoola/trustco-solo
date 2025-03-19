@@ -722,7 +722,21 @@ a:hover {
 		font-size: 24px;
 		color: var(--dark-ash)
 	}
+
+
+    @media (max-width:991px) {
+	    .numbers-container {
+			gap: 20px;
+		}
 	
+		.number{
+			font-size: 36px;
+		}
+	
+		.label {
+			font-size: 16px;
+		}
+		}
 
 				
 
