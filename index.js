@@ -1,5 +1,3 @@
-
-
 function onHamburgerMenuClick(isOpen) {
   const menuElement = document.querySelector(".hamburger-backdrop");
   if (isOpen) {
@@ -46,7 +44,6 @@ benefits.forEach((benefit) => {
   benefitContainer?.appendChild(card);
 });
 
-
 const metrics = [
   { value: "$65 M", label: "Generate sales" },
   { value: "58%", label: "Grew revenue" },
@@ -73,10 +70,70 @@ function createNumberCard(value, label) {
   return card;
 }
 
-
 const numbersContainer = document.getElementById("numbersContainer");
 metrics.forEach((metric) => {
   const card = createNumberCard(metric.value, metric.label);
   numbersContainer.appendChild(card);
 });
 
+const testimonials = [
+  {
+    text: "I'm totally unconvinced that two people can find a person they haven't known previously.",
+    name: "Andrew Wilkins",
+    role: "Managing Director,Yess Company",
+    img: "/assets/Client1.png",
+  },
+  {
+    text: "Easy to use, reasonably priced, and ensures I don't drop the ball on following up with my leads!",
+    name: "Daisy Phelps",
+    role: " Digital Marketing Manager, Monatc",
+    img: "/assets/Client2.png",
+  },
+  {
+    text: "I am extremely satisfied with the quality and performance.Great customer service.",
+    name: "Michael Brown",
+    role: "CTO, SoftTech",
+    img: "/assets/Client1.png",
+  },
+  {
+    text: "Reliable, affordable, and highly efficient!Great customer service and fantastic results!",
+    name: "Emily White",
+    role: "Director, Innovate Inc",
+    img: "/assets/Client1.png",
+  },
+];
+
+const carousel = document.getElementById("carousel");
+const dotsContainer = document.getElementById("dots");
+const slidesToShow = window.innerWidth > 768 ? 2 : 1;
+
+testimonials.forEach(({ text, name, role, img }) => {
+  const testimonial = document.createElement("div");
+  testimonial.classList.add("testimonial");
+  testimonial.innerHTML = `<img src="/assets/Qotes.png" alt="quotes"/><p>${text}</p><div class="client"><img src="${img}" alt="${name}"><div><h3>${name}</h3><p class='role'>${role}</p</div></div>`;
+  carousel.appendChild(testimonial);
+});
+
+const totalSlides = Math.ceil(testimonials.length / slidesToShow);
+let currentIndex = 0;
+
+for (let i = 0; i < totalSlides; i++) {
+  const dot = document.createElement("span");
+  dot.classList.add("dot");
+  dot.addEventListener("click", () => moveToSlide(i));
+  dotsContainer.appendChild(dot);
+}
+
+function moveToSlide(index) {
+  currentIndex = index;
+  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+  updateDots();
+}
+
+function updateDots() {
+  document.querySelectorAll(".dot").forEach((dot, index) => {
+    dot.classList.toggle("active", index === currentIndex);
+  });
+}
+
+moveToSlide(0);
