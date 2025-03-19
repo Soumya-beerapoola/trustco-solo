@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Page</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<!-- Header Section -->
+	<header class="headerSection">
+		<img src="/assets/Logo.png" alt="logo" class="logo" />
+		<nav class="navSection">
+			<!-- <--<Navigation Links Placeholder -->
+			<ul class="navlinks">
+				<li><a href="index.html">Features</a></li>
+				<li><a href="#">Solutions</a></li>
+				<li><a href="contact.html">Company</a></li>
+				<li><a href="#">Resources</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="headerButtons">
+			<button class="secondaryButton">Login</button>
+			<button class="primaryButton">SignUp</button>
+		</div>
+		<div class="hamburger-container">
+			<img class="hamburger-menu" onclick="onHamburgerMenuClick(true)" src="/assets/Menu.png" />
+			<div class="hamburger-backdrop">
+				<div class="hamburger-side-menu">
+					<button class="close-button" onclick="onHamburgerMenuClick(false)">X</button>
+					<div class="mobileLogin">
+						<button class="secondaryButton">Login</button>
+						<button class="primaryButton">SignUp</button>
+					</div>
+					<ul class="navlinks">
+						<li><a href="index.html">Features</a></li>
+						<li><a href="#">Solutions</a></li>
+						<li><a href="#">Company</a></li>
+						<li><a href="#">Resources</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<!-- Main Content Section -->
+	<main>
+	<section class="contact-info">
+		<h2 class="heading">We are here to help</h2>
+		<p>Contact us if you have any questions about our company. Our best team will provide your answer within a few
+			hours.</p>
+		<div class="contact-cards">
+			<div class="card">
+				<img src="/assets/Email.png" alt="Email Icon">
+				<h3>Email Us</h3>
+				<p>Ask anything by emailing us and we will respond within a few days.</p>
+				<a href="#">Send Email →</a>
+			</div>
+			<div class="card">
+				<img src="/assets/Location.png" alt="Location Icon">
+				<h3>Drop In</h3>
+				<p>You can meet us at our office and discuss the details of your questions.</p>
+				<a href="#">Get Direction →</a>
+			</div>
+			<div class="card">
+				<img src="/assets/Call.png" alt="Phone Icon">
+				<h3>Call Us</h3>
+				<p>Call us if your question requires an immediate response.</p>
+				<a href="tel:+123456789">Call Now →</a>
+			</div>
+		</div>
+	</section>
+	
+	<section class="contact-form">
+		<h2 class="heading">Leave us a message</h2>
+		<p>Contact us if you have any questions about our company. Our best team will provide your answer within a few
+			hours.</p>
+		<form>
+			<div class="form-grid">
+				<div class="input-group">
+					<label for="name">Name</label>
+					<img src="/assets/Group.png" alt="User Icon">
+					<input type="text" id="name" name="name" placeholder="Your Name" required>
+				</div>
+				<div class="input-group">
+					<label for="email">Email Address</label>
+					<img src="/assets/Vector.png" alt="Email Icon">
+					<input type="email" id="email" name="email" placeholder="Your Email" required>
+				</div>
+				<div class="input-group">
+					<label for="company">Company Name</label>
+					<img src="/assets/mdi_company.png" alt="Company Icon">
+					<input type="text" id="company" name="company" placeholder="Company Name" required>
+				</div>
+				<div class="input-group">
+					<label for="contact">Contact Number</label>
+					<img src="/assets/ion_call-outline.png" alt="Phone Icon">
+					<input type="tel" id="contact" name="contact" placeholder="Your Phone Number" required>
+				</div>
+				<div class="input-group full-width">
+					<label for="message">How we can help?</label>
+					<textarea id="message" name="message" rows="4" placeholder="Type your message here..."
+						required></textarea>
+				</div>
+			</div>
+			<div class="formSubmitSection">
+			<div class="checkbox-group">
+				<input type="checkbox" id="terms" required>
+				<label for="terms">I agree with the <a href="#">Terms & Conditions</a></label>
+			</div>
+			<button type="submit" class="primaryButton">Submit</button>
+			</div>
+		</form>
+	</section>
+
+	</main>
+
+	<!-- Footer Section -->
+	<footer class="footer">
+		<div class="footer-container">
+
+			<div class="footer-left">
+				<img src="/assets//Logo.png" alt="Trustco Logo" class="footer-logo">
+				<div class="social-icons">
+					<a href="#"><img src="/assets/facebook.png" alt="Facebook"></a>
+					<a href="#"><img src="/assets/Instagram.png" alt="Instagram"></a>
+					<a href="#"><img src="/assets/youtube.png" alt="YouTube"></a>
+				</div>
+			</div>
+			<div class="footer-middle">
+				<p>
+					An awesome & powerful tool for your business, increasing revenue with in-depth
+					data analysis and tech adaptation to build bridges between companies and customers.
+				</p>
+			</div>
+			<div class="footer-links">
+				<div class="footer-column">
+					<h4>Home</h4>
+					<ul>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Solutions</a></li>
+						<li><a href="#">Resources</a></li>
+						<li><a href="#">Pricing</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h4>About Us</h4>
+					<ul>
+						<li><a href="#">Company</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Career</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<footer class="site-credits">
+		<div class="credits-container">
+			<div class="copyright">
+				<p>&#169;<span id="current-year"></span> Trustco.</p>
+			</div>
+			<div class="legal-links">
+				<a href="#">Terms of Service</a>
+				<a href="#">Privacy Policy</a>
+			</div>
+			<div class="language-switcher">
+				<img class="globe-icon" src="/assets/global-line.png" />
+				<select id="language-select">
+					<option value="en">English</option>
+					<option value="es">Español</option>
+					<option value="fr">Français</option>
+					<option value="de">Deutsch</option>
+				</select>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="./index.js"></script>
+</body>
+
+</html>
