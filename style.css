@@ -43,9 +43,16 @@ h6 {
 	margin-bottom: 16px;
 }
 .heading {
-font-size: 60px;
-font-weight: 700;
-line-height: 72px;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 72px;
+}
+@media (max-width:991px) {
+	.heading {
+		font-size: 30px;
+		line-height: 38px;
+	}
+	
 }
 
 /* Paragraph styling */
@@ -794,7 +801,38 @@ a:hover {
 	}
 
 
+	@media (max-width: 991px) {
+		#meet-founder {
+			flex-direction: column;
+			text-align: center;
+			padding:10px;
+		}
 
+		.founder-content {
+			padding-right: 0;
+			margin-bottom: 30px;
+		}
+		.founder-image img {
+			max-width: none;
+			width:100%;
+		}
+		.founder-content blockquote {
+			font-size: 16px;
+			line-height: 24px;
+		}
+		.cta-button {
+			align-self: center;
+			width:100%;
+			max-width:280px;
+			justify-self: center;
+		}
+		.founder-name {
+			font-size: 16px;
+		}
+		.founder-title {
+			font-size: 12px;
+		}
+	} 
 				
 
 				
